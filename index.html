@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech App</h1>
+
+        <!-- Input de texto -->
+        <textarea id="textInput" placeholder="Escribe aquí el texto que quieres convertir a voz..."></textarea>
+
+        <!-- Selección de voz -->
+        <label for="voiceSelect">Selecciona la voz:</label>
+        <select id="voiceSelect">
+            <option value="Albert">Albert (predeterminado)</option>
+        </select>
+
+        <!-- Selección de velocidad -->
+        <label for="speedSelect">Velocidad de habla:</label>
+        <select id="speedSelect">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x (Normal)</option>
+            <option value="1.5">1.5x</option>
+        </select>
+
+        <!-- Botón de conversión -->
+        <button id="speakBtn">Texto a voz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
